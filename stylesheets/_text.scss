@@ -1,0 +1,39 @@
+.text {
+  width: 100%;
+  z-index: 100;
+  padding-top: 40px;
+
+  @include BodyFadeIn($text-in-delay);
+
+  p {
+    column-count: 2;
+    column-gap: 30px;
+    padding-bottom: 30px;
+    width: 50%;
+  }
+}
+
+@media (max-height: 900px) {
+  .text {
+    p {
+      width: 75%;
+    }
+  }
+}
+
+@media (max-height: 750px) {
+  .text {
+    p {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .text {
+    p {
+      width: 100%;
+      columns: unset;
+    }
+  }
+}

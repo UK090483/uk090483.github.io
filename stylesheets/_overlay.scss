@@ -1,0 +1,42 @@
+.overlay {
+  position: absolute;
+  pointer-events: none;
+  z-index: 2000;
+  background-color: white;
+  height: calc(100vh + 224.44px);
+
+  img {
+    width: 100vw;
+    height: 100vh;
+    animation-name: logoIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0;
+    opacity: 0;
+  }
+
+  animation-name: overlayOut;
+  animation-duration: $overlay-duration;
+  animation-fill-mode: forwards;
+  animation-delay: $overlay-delay;
+}
+
+@keyframes overlayOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes logoIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

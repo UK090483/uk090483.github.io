@@ -1,0 +1,31 @@
+$overlay-delay: 1s;
+$overlay-duration: 1.5s;
+$banner-delay: $overlay-delay + $overlay-duration;
+$banner-duration: 2s;
+$body-delay: 1.5s;
+$body-in-between:0.35s;
+$logo-in-delay: 0s;
+$image-in-delay:$logo-in-delay + $body-in-between;
+$header-in-delay:$image-in-delay + $body-in-between;
+$text-in-delay:$header-in-delay + $body-in-between;
+
+$header-height: 100px;
+
+@mixin BodyFadeIn($delay) {
+  opacity: 0;
+  animation-name: BodyIn;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: $body-delay + $delay;
+}
+
+@keyframes BodyIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

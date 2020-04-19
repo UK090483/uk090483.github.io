@@ -1,0 +1,101 @@
+.images {
+  z-index: -100;
+  overflow: hidden;
+  width: 75%;
+  position: absolute;
+  margin-left: auto;
+  right: 20px;
+
+  @include BodyFadeIn($image-in-delay);
+
+  .img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+  }
+
+  .img1 {
+    background-image: url("../images/Plattenspieler.jpg");
+    background-size: cover;
+    background-position: center right;
+    transition: width 1s;
+  }
+
+  .img2 {
+    background-image: url("../images/Sound.jpg");
+    background-size: cover;
+    background-position: center right;
+    transition: width 1s;
+  }
+
+  &[data-image="1"] {
+    .img1 {
+      width: 100%;
+      z-index: -1;
+    }
+
+    .img2 {
+      width: 0;
+      z-index: 1;
+    }
+  }
+
+  &[data-image="2"] {
+    .img1 {
+      width: 100%;
+      z-index: 1;
+    }
+
+    .img2 {
+      width: 100%;
+      z-index: -1;
+    }
+  }
+
+  &[data-image="3"] {
+    .img1 {
+      width: 0%;
+      z-index: 1;
+    }
+
+    .img2 {
+      width: 100%;
+      z-index: -1;
+    }
+  }
+
+  &[data-image="4"] {
+    .img1 {
+      width: 100%;
+      z-index: 1;
+    }
+
+    .img2 {
+      z-index: -1;
+      width: 100%;
+    }
+  }
+}
+
+.images::before {
+  content: "";
+  width: 1px;
+  margin-left: -1px;
+  float: left;
+  height: 0;
+  padding-top: 9 / 16 * 100%;
+}
+
+.images::after {
+  /* to clear float */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 650px) {
+  .images {
+    right: 0;
+  }
+}

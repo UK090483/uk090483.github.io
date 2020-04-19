@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "agenda";
+  src: url("../fonts/agenda-light.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "SetSail";
+  src: url("../fonts/set-sail.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+body {
+  font-family: agenda, sans-serif;
+
+}
+
+h3 {
+  font-family: SetSail, sans-serif;
+}
+
+p {
+  font-weight: 900;
+  font-family: agenda, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
