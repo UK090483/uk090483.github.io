@@ -3,6 +3,7 @@
   padding-bottom: 50px;
   width: fit-content;
   margin-left: auto;
+  @include BodyFadeIn(0s);
 
   h3 {
     margin-left: auto;

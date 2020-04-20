@@ -10,10 +10,11 @@
     text-shadow: 1px 1px 5px rgba(207, 207, 207, 0.432);
     width: 100%;
     font-family: agenda, sans-serif;
-    color: #394076;
+    color: $text-primary;
     letter-spacing: 0.35rem;
     z-index: 1000;
     transition: all 0.5s;
+    
   }
 }
 
