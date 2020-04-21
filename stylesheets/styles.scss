@@ -9,6 +9,7 @@
 @import "./text";
 @import "./footer";
 @import './header';
+@import './login_banner';
 
 * {
   box-sizing: border-box;
@@ -36,6 +37,7 @@ body {
 
 .body {
   min-height: calc(100vh - #{$header-height});
+  color: $text-dark;
 }
 
 @media (max-width: 650px) {

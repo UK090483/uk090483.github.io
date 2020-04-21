@@ -2,12 +2,12 @@
   position: absolute;
   width: 150px;
   height: $header-height - 10px;
-  right: 20px;
+  right: 100px;
   top: - $header-height - 90px;
   background-color: #e7cacc;
   animation-name: bannerIn;
   animation-duration: $banner-duration;
-  animation-delay: $banner-delay;
+  animation-delay: $banner-delay ;
   animation-fill-mode: forwards;
   animation-iteration-count: initial;
   animation-direction: initial;
@@ -37,6 +37,7 @@
 
 @media (max-width: 650px) {
   .contact-banner {
+    animation-delay: $banner-delay;
     right: 0;
   }
 }

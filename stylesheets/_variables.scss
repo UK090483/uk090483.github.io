@@ -9,8 +9,11 @@ $image-in-delay:$logo-in-delay + $body-in-between;
 $header-in-delay:$image-in-delay + $body-in-between;
 $text-in-delay:$header-in-delay + $body-in-between;
 
-$text-dark: black;
+$text-dark: #474747;
 $text-primary: #394076;
+
+$footer-background : #f2f2f2;
+
 
 
 $header-height: 100px;
