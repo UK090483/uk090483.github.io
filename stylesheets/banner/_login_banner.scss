@@ -39,7 +39,7 @@
     animation-name: none;
     height: 22px;
     order:1;
-    transform: translateY(20px) translateX(150%);
+    transform: translateY(20px) translateX(500%);
     transition: transform $menu-transition-duration;
     background-color: transparent;
     a{
@@ -55,8 +55,9 @@
     }
    
   }
+  .burger-check:checked ~ .login-banner{
+    transform: translateY(20px) translateX(0);
+  }
+  
 }
 
-.burger-check:checked ~ .login-banner{
-  transform: translateY(20px) translateX(0);
-}

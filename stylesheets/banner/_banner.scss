@@ -1,11 +1,11 @@
 .banner{
-  
+  @include BodyFadeIn($text-in-delay);
    position: relative;
     height: 100px;
     width: 50%;
+    margin-left: auto;
     display: flex;
     justify-content: flex-end;
-   
     p{
         margin: 0;
         padding-left:10px;

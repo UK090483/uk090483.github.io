@@ -34,6 +34,8 @@
 h1 {
  
    font-size: calc(2rem + 40 * ((100vw - 320px) / 680));
+   margin-top: 30px;
+   margin-bottom: 30px;
  
   // line-height: 3rem;
 }
@@ -41,7 +43,7 @@ h1 {
 @media screen and (min-width: 620px) {
   h1 {
     font-size: calc(3rem + 20 * ((100vw - 320px) / 680));
-    // margin-bottom: 40px;
+     margin-bottom: 0;
     // line-height: calc(5rem + 20 * ((100vw - 320px) / 680));
   }
 }

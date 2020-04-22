@@ -30,7 +30,7 @@
     margin-bottom: 5px;
     height: 42px;
     order:2;
-    transform: translateY(0px) translateX(150%);
+    transform: translateY(0px) translateX(500%);
     transition: transform $menu-transition-duration;
     .contact-banner-inner{
     img{
@@ -43,13 +43,13 @@
     }
   }
   }
-
+  .burger-check:checked ~ .contact-banner{
+    transform: translateY(0px) translateX(0);
+  }
  
 }
 
-.burger-check:checked ~ .contact-banner{
-  transform: translateY(0px) translateX(0);
-}
+
 
 
 // .contact-banner {

@@ -40,7 +40,7 @@ body {
 .head {
  height: $header-height;
   width: 100%; 
-
+  overflow: hidden;
 
   .container{
     display: flex;
