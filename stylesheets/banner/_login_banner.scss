@@ -1,0 +1,63 @@
+.login-banner{
+  margin-bottom: 10px;
+  margin-left:10px;
+  background-color: #e7cacc;
+  display: flex;
+  align-items: flex-end;
+
+  @include bannerIn(0.5s);
+  .login-banner-inner{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+    p{
+      margin: 0;
+      padding: 5px 17px;
+     
+    }
+  }
+  .cross{
+    min-width: 25px;
+    min-height:25px;
+    display:none;
+    pointer-events: none;
+  }
+}
+
+
+
+
+@media (max-width: 650px) {
+ 
+  .login-banner{
+    .cross{
+      display:block;
+    }
+    width: 80%;
+    margin: 0;
+    animation-name: none;
+    height: 22px;
+    order:1;
+    transform: translateY(20px) translateX(500%);
+    transition: transform $menu-transition-duration;
+    background-color: transparent;
+    a{
+      width: 100%;
+    };
+    .login-banner-inner{
+      justify-content: start;
+      background-color: #e7cacc;
+      height: 25px;
+      p{
+        padding: 0 0 0 10px;
+      }
+    }
+   
+  }
+  .burger-check:checked ~ .login-banner{
+    transform: translateY(20px) translateX(0);
+  }
+  
+}
+

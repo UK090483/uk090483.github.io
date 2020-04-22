@@ -2,9 +2,9 @@
   z-index: -100;
   overflow: hidden;
   width: 75%;
-  position: absolute;
+  position: relative;
   margin-left: auto;
-  right: 20px;
+  right: 0;
 
   @include BodyFadeIn($image-in-delay);
 
@@ -18,14 +18,14 @@
   .img1 {
     background-image: url("../images/Plattenspieler.jpg");
     background-size: cover;
-    background-position: center right;
+    background-position: 60% center;
     transition: width 1s;
   }
 
   .img2 {
     background-image: url("../images/Sound.jpg");
     background-size: cover;
-    background-position: center right;
+    background-position: 60% center;
     transition: width 1s;
   }
 
@@ -96,6 +96,12 @@
 
 @media (max-width: 650px) {
   .images {
+    transform: translateX(20px);
+    width: 100%;
     right: 0;
+    position: relative;
+  }
+  .images::before{
+    padding-top: 94.55%;
   }
 }

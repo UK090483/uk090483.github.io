@@ -1,20 +1,37 @@
 .logo {
-  transform: translateX(-75px) translateY(35px);
-  width: 300px;
+  
+  top:22px;
+  position: absolute;
+  max-height: 100px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  img{  
+    width:100%;
+    transform: translateX(-5px)
+  }
+  transform: translate3d(0,78px,0 );
 
   @include BodyFadeIn($logo-in-delay);
 }
 
-@media (max-width: 1094px) {
+@media (max-width: 830px) {
   .logo {
-    transform: translateX(-75px) translateY(-10px);
-    top: -12px;
+    transform: translate3d(0,10px,0 );
+  }
+}
+@media (max-height: 600px) {
+  .logo {
+    transform: translate3d(0,10px,0 );
   }
 }
 
+
 @media (max-width: 650px) {
   .logo {
-    transform: translateX(-75px) translateY(-21px);
-    width: 280px;
+    width: 140px;
+   
   }
 }

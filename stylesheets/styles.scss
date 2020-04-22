@@ -2,14 +2,18 @@
 @import "./normalize";
 @import "./variables";
 @import "./fonts";
-@import "./contact_banner";
+@import './banner/banner';
+@import './banner/burger';
+@import "./banner/contact_banner";
+@import './banner/login_banner';
+
 @import "./images";
 @import "./overlay";
 @import "./logo";
 @import "./text";
 @import "./footer";
 @import './header';
-@import './login_banner';
+
 
 * {
   box-sizing: border-box;
@@ -19,6 +23,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: #474747;
+
 }
 
 .container {
@@ -28,11 +33,26 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
+
+
 }
 
 .head {
-  height: $header-height;
-  width: 100%;
+ height: $header-height;
+  width: 100%; 
+  overflow: hidden;
+
+  .container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  
+}
+@media (max-width: 650px) {
+  .head{
+   height: 120px;
+  }
 }
 
 .body {
@@ -40,11 +60,11 @@ body {
   color: $text-dark;
 }
 
-@media (max-width: 650px) {
-  .body {
-    margin-top: 20px;
-  }
-}
+// @media (max-width: 650px) {
+//   .body {
+//     margin-top: 20px;
+//   }
+// }
 
 ::-webkit-scrollbar {
   width: 0;

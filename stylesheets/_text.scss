@@ -30,8 +30,12 @@
 }
 
 @media (max-width: 650px) {
+  
   .text {
+    padding-top: 0;
+    
     p {
+      margin-top: 0;
       width: 100%;
       columns: unset;
     }
