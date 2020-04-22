@@ -1,0 +1,54 @@
+.banner{
+  
+   position: relative;
+    height: 100px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+   
+    p{
+        margin: 0;
+        padding-left:10px;
+        padding-right:10px;
+        line-height: 1rem;
+        font-size: 0.8rem;
+        letter-spacing: 1.5px;
+        font-weight: bold;
+        color: #394076;
+        transform: translateY(2px);
+    }
+
+}
+
+@mixin bannerIn($delay) {
+    transform: translateY(-100%);
+    animation-name: bannerIn;
+    animation-duration: $banner-duration;
+    animation-delay: $banner-delay + $delay;
+    animation-fill-mode: forwards;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+  }
+  
+  @keyframes bannerIn {
+    from {
+        transform: translateY(-100%);
+      }
+    
+      to {
+        transform: translateY(0);
+      }
+  }
+  
+
+
+  @media (max-width: 650px) {
+    .banner{
+        height: 120px;
+        width: 140.84px;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: flex-end;
+       
+    }
+  }
