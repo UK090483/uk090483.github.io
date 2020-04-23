@@ -25,9 +25,6 @@
   }
 }
 
-
-
-
 @media (max-width: 650px) {
  
   .login-banner{
@@ -57,7 +54,6 @@
   }
   .burger-check:checked ~ .login-banner{
     transform: translateY(20px) translateX(0);
-  }
-  
+  } 
 }
 

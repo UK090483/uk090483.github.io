@@ -1,5 +1,5 @@
 $burger--thickness : 5px;
-
+$width: 28px;
 .burger{
     -webkit-tap-highlight-color: transparent;
    position: absolute;
@@ -8,8 +8,7 @@ $burger--thickness : 5px;
    transition: left 1s;
    
 
-    $width: 28px;
-	
+   
 	display: none;
     border: 0;
 	background: none;

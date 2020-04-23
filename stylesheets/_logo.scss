@@ -1,5 +1,4 @@
 .logo {
-  
   top:22px;
   position: absolute;
   max-height: 100px;
@@ -13,7 +12,6 @@
     transform: translateX(-5px)
   }
   transform: translate3d(0,78px,0 );
-
   @include BodyFadeIn($logo-in-delay);
 }
 
@@ -22,16 +20,15 @@
     transform: translate3d(0,10px,0 );
   }
 }
+
 @media (max-height: 600px) {
   .logo {
     transform: translate3d(0,10px,0 );
   }
 }
 
-
 @media (max-width: 650px) {
   .logo {
     width: 140px;
-   
   }
 }
