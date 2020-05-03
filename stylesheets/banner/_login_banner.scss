@@ -1,11 +1,11 @@
 .login-banner{
-  margin-bottom: 10px;
-  margin-left:10px;
-  background-color: #e7cacc;
+ 
+  
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  width:100px;
 
-  @include bannerIn(0.5s);
+  // @include bannerIn(0.5s);
   .login-banner-inner{
    display: flex;
    align-items: center;

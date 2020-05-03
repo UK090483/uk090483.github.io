@@ -1,10 +1,11 @@
 .überschrift {
-  width: 70%;
-  height: 100%;
+  width: 75%;
   top:0;
   position: absolute;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  border: red solid 1px;
+
 
   @include BodyFadeIn($header-in-delay);
 
@@ -16,10 +17,27 @@
     letter-spacing: 0.35rem;
     z-index: 1000;
     transition: all 0.5s;
+    padding-left: 10%;
    
   }
 }
 
+
+.überschrift::before {
+  content: "";
+  width: 1px;
+  margin-left: -1px;
+  float: left;
+  height: 0;
+  padding-top: 9 / 16 * 100%;
+}
+
+.überschrift::after {
+
+  content: "";
+  display: table;
+  clear: both;
+}
 @media (max-width: 650px) {
   .überschrift{
     position: relative;

@@ -1,23 +1,25 @@
 .banner{
-  @include BodyFadeIn($text-in-delay);
-   position: relative;
-    height: 100px;
-    width: 50%;
-    margin-left: auto;
-    display: flex;
-    justify-content: flex-end;
-    p{
-        margin: 0;
-        padding-left:10px;
-        padding-right:10px;
-        line-height: 1rem;
-        font-size: 0.8rem;
-        letter-spacing: 1.5px;
-        font-weight: 900;
-        color: #394076;
-        transform: translateY(2px);
-    }
+  // @include BodyFadeIn($text-in-delay);
+  //  position: relative;
+  //   height: 100px;
+  //   width: 50%;
+  //   margin-left: auto;
+  //   display: flex;
+  //   justify-content: flex-end;
+  //   p{
+  //       margin: 0;
+  //       padding-left:10px;
+  //       padding-right:10px;
+  //       line-height: 1rem;
+  //       font-size: 0.8rem;
+  //       letter-spacing: 1.5px;
+  //       font-weight: 900;
+  //       color: #394076;
+  //       transform: translateY(2px);
+  //   }
 
+  display: flex;
+  
 }
 
 @mixin bannerIn($delay) {
@@ -42,13 +44,13 @@
   
 
 
-  @media (max-width: 650px) {
-    .banner{
-        height: 120px;
-        width: 140.84px;
-        flex-wrap: wrap;
-        justify-content: start;
-        align-items: flex-end;
+  // @media (max-width: 650px) {
+  //   .banner{
+  //       height: 120px;
+  //       width: 140.84px;
+  //       flex-wrap: wrap;
+  //       justify-content: start;
+  //       align-items: flex-end;
        
-    }
-  }
+  //   }
+  // }

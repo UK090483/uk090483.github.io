@@ -12,7 +12,7 @@
 @import "./logo";
 @import "./text";
 @import "./footer";
-@import './header';
+@import './überschrift';
 
 
 * {
@@ -41,12 +41,12 @@ body {
  height: $header-height;
   width: 100%; 
   overflow: hidden;
+border:red solid 1px;
+display: flex;
+justify-content: space-between;
+align-items: center;
 
-  .container{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
+  height: $header-height;
   
 }
 @media (max-width: 650px) {
@@ -58,6 +58,8 @@ body {
 .body {
   min-height: calc(100vh - #{$header-height});
   color: $text-dark;
+  position: relative;
+  overflow: hidden;
 }
 
 // @media (max-width: 650px) {

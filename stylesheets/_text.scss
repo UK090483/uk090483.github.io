@@ -6,7 +6,7 @@
   @include BodyFadeIn($text-in-delay);
 
   p {
-    column-count: 2;
+   font-size: 1.6rem;
     column-gap: 30px;
     padding-bottom: 30px;
     width: 50%;
