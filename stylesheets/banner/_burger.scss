@@ -1,10 +1,10 @@
 $burger--thickness : 5px;
-$width: 28px;
+$width: 40px;
 .burger{
     -webkit-tap-highlight-color: transparent;
    position: absolute;
-   top:50px;
-   right:0px;
+   top:35px;
+   right:20px;
    transition: left 1s;
    
 
@@ -15,10 +15,10 @@ $width: 28px;
 	outline: 0;
 	padding: 0;
 	cursor: pointer;
-	 border-bottom: $burger--thickness solid transparent;
+	 border-bottom: $burger--thickness solid $text-dark;
     width: $width;
     
-    animation-name: burgerTransitionIn;
+    // animation-name: burgerTransitionIn;
     animation-duration: $burger-transition;
     animation-fill-mode: forwards;
 
@@ -32,7 +32,7 @@ $width: 28px;
 	&:before {
 		content: "";
 		display: block;
-		border-bottom: $burger--thickness solid #e7cacc;
+		border-bottom: $burger--thickness solid $text-dark;
 		width: 100%;
 		margin-bottom: 3px;
 		transition: transform $burger-rotation-duration ease-out;         
@@ -41,7 +41,7 @@ $width: 28px;
 	&:after {
 		content: "";
 		display: block;
-		border-bottom: $burger--thickness solid #e7cacc;
+		border-bottom: $burger--thickness solid $text-dark;
 		width: 100%;
 		margin-bottom: 3px;
 		transition: transform $burger-rotation-duration ease-out;
@@ -56,8 +56,8 @@ $width: 28px;
 .burger-check:checked ~ .burger {
     
     border-bottom: $burger--thickness solid transparent;
-    animation-name: burgerTransition;
-    animation-duration: $burger-transition;
+    // animation-name: burgerTransition;
+     animation-duration: $burger-transition;
     animation-fill-mode: forwards;
   
     &:before {

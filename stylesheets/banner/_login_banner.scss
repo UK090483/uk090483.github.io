@@ -3,7 +3,11 @@
   
   display: flex;
   align-items: center;
-  width:100px;
+  justify-content: center;
+  width:220px;
+  height: $header-height;
+  background-color: white;
+  
 
   // @include bannerIn(0.5s);
   .login-banner-inner{
@@ -26,34 +30,41 @@
 }
 
 @media (max-width: 650px) {
- 
   .login-banner{
-    .cross{
-      display:block;
-    }
-    width: 80%;
-    margin: 0;
-    animation-name: none;
-    height: 22px;
-    order:1;
-    transform: translateY(20px) translateX(500%);
-    transition: transform $menu-transition-duration;
-    background-color: transparent;
-    a{
-      width: 100%;
-    };
-    .login-banner-inner{
-      justify-content: start;
-      background-color: #e7cacc;
-      height: 25px;
-      p{
-        padding: 0 0 0 10px;
-      }
-    }
-   
+    width: 100%;
+    // display: none;
   }
-  .burger-check:checked ~ .login-banner{
-    transform: translateY(20px) translateX(0);
-  } 
 }
+
+// @media (max-width: 650px) {
+ 
+//   .login-banner{
+//     .cross{
+//       display:block;
+//     }
+//     width: 80%;
+//     margin: 0;
+//     animation-name: none;
+//     height: 22px;
+//     order:1;
+//     transform: translateY(20px) translateX(500%);
+//     transition: transform $menu-transition-duration;
+//     background-color: transparent;
+//     a{
+//       width: 100%;
+//     };
+//     .login-banner-inner{
+//       justify-content: start;
+//       background-color: #e7cacc;
+//       height: 25px;
+//       p{
+//         padding: 0 0 0 10px;
+//       }
+//     }
+   
+//   }
+//   .burger-check:checked ~ .login-banner{
+//     transform: translateY(20px) translateX(0);
+//   } 
+// }
 

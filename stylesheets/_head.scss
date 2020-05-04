@@ -1,0 +1,21 @@
+.head {
+ 
+    height: $header-height;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (max-width: 650px) {
+    .head{
+      
+        flex-wrap: wrap;
+      position: relative;
+      padding-top: 0%;
+     
+    }
+
+    
+  }
+

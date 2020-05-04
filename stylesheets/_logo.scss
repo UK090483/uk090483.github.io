@@ -4,9 +4,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
+  width: 250px;
   margin-left: 20px;
-  border: green solid 1px;
+ 
+  
   img{  
     width:100%;
    
@@ -27,8 +28,8 @@
 //   }
 // }
 
-// @media (max-width: 650px) {
-//   .logo {
-//     width: 140px;
-//   }
-// }
+@media (max-width: 650px) {
+  .logo {
+    width: 200px;
+  }
+}

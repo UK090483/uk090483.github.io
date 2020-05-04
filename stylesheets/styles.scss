@@ -13,50 +13,43 @@
 @import "./text";
 @import "./footer";
 @import './überschrift';
+@import './head';
+
 
 
 * {
   box-sizing: border-box;
 }
+body{
+  color: $text-dark;
+  width:100vw;
+}
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  color: #474747;
-
+.main-content{
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .container {
-  width: calc(1vh * 135);
+  width: 1320px;
   max-width: 100vw;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
-
-
 }
 
-.head {
- height: $header-height;
-  width: 100%; 
-  overflow: hidden;
-border:red solid 1px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+.container-wide {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-  height: $header-height;
-  
-}
-@media (max-width: 650px) {
-  .head{
-   height: 120px;
-  }
-}
+
 
 .body {
-  min-height: calc(100vh - #{$header-height});
   color: $text-dark;
   position: relative;
   overflow: hidden;

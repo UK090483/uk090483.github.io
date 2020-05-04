@@ -1,11 +1,13 @@
 .images {
   z-index: -100;
   overflow: hidden;
-  width: 75%;
-  transform: translateX(10%);
+  width: 65%;
+  transform: translateX(35vw);
   position: relative;
-  margin-left: auto;
   right: 0;
+  height: calc(100vh - 100px);
+  min-height: 30vw;
+  
 
   @include BodyFadeIn($image-in-delay);
 
@@ -17,9 +19,9 @@
   }
 
   .img1 {
-    background-image: url("../images/Plattenspieler.jpg");
+    background-image: url("../images/Plattenspieler_mid.jpg");
     background-size: cover;
-    background-position: 60% center;
+    background-position: 20% top;
     transition: width 1s;
     animation-name: imageAnimation1;
     animation-duration: 15s;
@@ -86,28 +88,31 @@
 
 
 
-.images::before {
-  content: "";
-  width: 1px;
-  margin-left: -1px;
-  float: left;
-  height: 0;
-  padding-top: 9 / 16 * 100%;
-}
+// .images::before {
+//   content: "";
+//   width: 1px;
+//   margin-left: -1px;
+//   float: left;
+//   height: 0;
+//   padding-top: 9 / 16 * 100%;
+// }
 
-.images::after {
+// .images::after {
 
-  content: "";
-  display: table;
-  clear: both;
-}
+//   content: "";
+//   display: table;
+//   clear: both;
+// }
 
-@media (max-width: 650px) {
+
+@include md {
   .images {
-    transform: translateX(20px);
+    transform: translateX(60px);
     width: 100%;
     right: 0;
     position: relative;
+    height: 100vw;
+    min-height: 30vw;
   }
   .images::before{
     padding-top: 94.55%;

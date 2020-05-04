@@ -1,22 +1,19 @@
 .banner{
-  // @include BodyFadeIn($text-in-delay);
+   @include BodyFadeIn($text-in-delay);
   //  position: relative;
   //   height: 100px;
   //   width: 50%;
   //   margin-left: auto;
   //   display: flex;
   //   justify-content: flex-end;
-  //   p{
-  //       margin: 0;
-  //       padding-left:10px;
-  //       padding-right:10px;
-  //       line-height: 1rem;
-  //       font-size: 0.8rem;
-  //       letter-spacing: 1.5px;
-  //       font-weight: 900;
-  //       color: #394076;
-  //       transform: translateY(2px);
-  //   }
+  transition:  height 1s;
+    p{
+        
+        line-height: 1rem;
+        font-size: 1.6rem;
+        color: #394076;
+        transform: translateY(2px);
+    }
 
   display: flex;
   
@@ -41,8 +38,28 @@
         transform: translateY(0);
       }
   }
-  
 
+ 
+ 
+
+
+  @media (max-width: 650px) {
+    .banner{
+      width: 100%;
+      flex-wrap: wrap;
+      position: relative;
+      padding-top: 0%;
+      height: 0px;
+      overflow: hidden;
+    }
+    .burger-check:checked ~ .banner{
+      height: 200px;
+     
+  }
+  
+  }
+
+  
 
   // @media (max-width: 650px) {
   //   .banner{

@@ -1,8 +1,8 @@
-$overlay-delay: 0.1s;
-$overlay-duration: 0.15s;
+$overlay-delay: 1s;
+$overlay-duration: 1.5s;
 $banner-delay: $overlay-delay + $overlay-duration;
 $banner-duration: 2s;
-$body-delay: 0.15s;
+$body-delay: 1.5s;
 $body-in-between:0.35s;
 $logo-in-delay: 0s;
 $image-in-delay:$logo-in-delay + $body-in-between;
@@ -24,10 +24,11 @@ $menu-transition-duration: 0.5s;
 $burger-transition: $menu-transition-duration + 0.1s;
 $burger-rotation-duration: $burger-transition + 0.2s;
 
+$screen-sm-min: 650px;
+$screen-md-min: 768px;
 
 
-
-$header-height: 60px;
+$header-height: 100px;
 
 @mixin BodyFadeIn($delay) {
   opacity: 0;
@@ -48,4 +49,25 @@ $header-height: 60px;
   }
 }
 
+@mixin BodyFadeIn($delay) {
+  opacity: 0;
+  animation-name: BodyIn;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: $body-delay + $delay;
+}
 
+
+@mixin sm {
+  @media (max-width: #{$screen-sm-min}) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (max-width: #{$screen-md-min}) {
+      @content;
+  }
+}
