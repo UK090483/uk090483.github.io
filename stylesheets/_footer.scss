@@ -2,8 +2,8 @@
   background-color:$footer-background;
 }
 .footer-content {
-  max-width: 1560px;
-  margin: 0 auto;
+width: 100%;
+  
   @include BodyFadeIn(0s);
   
 p{
@@ -23,14 +23,15 @@ p{
 
     p {
       line-height: 2rem;
-      width: 40%;
+      width: 50%;
       margin-top: 0;
-      padding-top: 0;
+      padding-top: 0;  
+      padding-right: 20px;
     }
 
     p:nth-child(2){
-      width: 30%;
-      flex-grow: 1;
+      width: 41.67%;
+      
     }
 
     p:last-child {
@@ -42,19 +43,19 @@ p{
     padding-bottom: 50px;
 
     p {
-      width: 40%;
+      width: 50%;
       margin-top: 0;
       padding-top: 0;
     }
 
     p:nth-child(2){ 
-      width: 30%;
+      width: 41.67%;
     }
   
   }
 }
 
-@media (max-width: 800px) {
+@include md  {
 
   .footer-content{
   .infos {

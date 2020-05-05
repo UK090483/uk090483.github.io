@@ -27,9 +27,15 @@
   }
 }
 
-@media (max-width: 650px) {
+
+@include md {
+  .login-banner{
+    width:180px;
+  }
+}
+@include sm  {
   .login-banner{
     width: 100%;
-    // display: none;
+   
   }
 }

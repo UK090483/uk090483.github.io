@@ -27,28 +27,41 @@ body{
 .main-content{
   max-width: 1920px;
   margin: 0 auto;
+  
 }
 
 .container {
-  width: 1320px;
-  max-width: 100vw;
+  width: 66.67%;
+  max-width: 1320px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
 }
 
+
 .container-wide {
-  width: 100%;
+
+  width: 83.33%;
   max-width: 1600px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
 }
 
+@include md {
+  .container {
+    width: 100%;
+  }
+  .container-wide {
+    width: 100%;
+  }
+}
+
 
 
 .body {
+  margin-top: 100px;
   color: $text-dark;
   position: relative;
   overflow: hidden;

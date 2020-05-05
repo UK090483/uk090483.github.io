@@ -21,7 +21,13 @@
   }
 }
 
-@media (max-width: 650px) {
+@include md {
+  .contact-banner{
+    width: 220px;
+  }
+}
+
+@include sm {
   .contact-banner{
     width: 100%;
   }

@@ -16,8 +16,9 @@
 }
 
 
-@media (max-width: 650px) {
+@include sm  {
   .logo {
+     transform: translateY(10px);
     width: 200px;
   }
 }
