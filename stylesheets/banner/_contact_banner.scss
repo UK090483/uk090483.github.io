@@ -4,69 +4,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
- 
- height: $header-height;
- width: 320px;
-  // @include bannerIn(0s);
+  height: $header-height;
+  width: 320px;
+  
 
   .contact-banner-inner{
    display: flex;
    align-items: center;
+   justify-content: center;
 
-   
-   
     img{
-      height: 50px;
-      padding-left:10px;
+      height: 40px;
+     padding-right:  20px ;
     }
-    p{
-      padding: 5px 20px 0 20px ;
-
-      // width: 116px;
-    }
+    
   }
 }
 
 @media (max-width: 650px) {
   .contact-banner{
     width: 100%;
-    // display: none;
   }
 }
 
-
-// @media (max-width: 650px) {
-//   .contact-banner{
-    
-//     animation-name: none;
-//     margin-bottom: 5px;
-//     height: 42px;
-//     order:2;
-//     transform: translateY(0px) translateX(500%);
-//     transition: transform $menu-transition-duration;
-//     .contact-banner-inner{
-//     img{
-//       order:2;
-//       padding-left:0;
-//       padding-right:5px;
-//     }
-//     p{
-//       padding-right: 0;
-//     }
-//   }
-//   }
-//   .burger-check:checked ~ .contact-banner{
-//     transform: translateY(0px) translateX(0);
-//   }
- 
-// }
-
-// @keyframes bannerIn {
-//   from {
-//     transform: translateY(-100%);
-//   }
-
-//   to {
-//     transform: translateY(0);
-//   }
-// }

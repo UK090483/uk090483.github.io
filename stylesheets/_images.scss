@@ -86,25 +86,6 @@
 }
 
 
-
-
-// .images::before {
-//   content: "";
-//   width: 1px;
-//   margin-left: -1px;
-//   float: left;
-//   height: 0;
-//   padding-top: 9 / 16 * 100%;
-// }
-
-// .images::after {
-
-//   content: "";
-//   display: table;
-//   clear: both;
-// }
-
-
 @include md {
   .images {
     transform: translateX(60px);

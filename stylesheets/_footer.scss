@@ -7,7 +7,7 @@
   @include BodyFadeIn(0s);
   
 p{
-  font-size: 1.6rem;
+ 
   color: #696969;;
 }
 
@@ -18,48 +18,41 @@ p{
 
   .infos {
     padding-bottom: 100px;
-   
     display: flex;
-    justify-content: space-between;
+    justify-content: stretch;
 
     p {
-     line-height: 2rem;
+      line-height: 2rem;
       width: 40%;
       margin-top: 0;
       padding-top: 0;
-      padding-right: 20px;
     }
+
     p:nth-child(2){
       width: 30%;
-
+      flex-grow: 1;
     }
 
     p:last-child {
-      width: 30%;
-      padding-right: 0;
-     text-align: end;
+     width: fit-content;
     }
   }
   .impressum{
-  
     display: flex;
     padding-bottom: 50px;
+
     p {
-    
       width: 40%;
       margin-top: 0;
       padding-top: 0;
-      padding-right: 20px;
     }
-    p:nth-child(2){
-      
+
+    p:nth-child(2){ 
       width: 30%;
     }
   
   }
 }
-
-
 
 @media (max-width: 800px) {
 

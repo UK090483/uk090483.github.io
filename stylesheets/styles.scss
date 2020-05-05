@@ -22,7 +22,6 @@
 }
 body{
   color: $text-dark;
-  width:100vw;
 }
 
 .main-content{
@@ -55,11 +54,7 @@ body{
   overflow: hidden;
 }
 
-// @media (max-width: 650px) {
-//   .body {
-//     margin-top: 20px;
-//   }
-// }
+
 
 ::-webkit-scrollbar {
   width: 0;

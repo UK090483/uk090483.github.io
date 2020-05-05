@@ -1,47 +1,16 @@
 .banner{
    @include BodyFadeIn($text-in-delay);
-  //  position: relative;
-  //   height: 100px;
-  //   width: 50%;
-  //   margin-left: auto;
-  //   display: flex;
-  //   justify-content: flex-end;
-  transition:  height 1s;
+  transition:  height 0.5s ease-in-out;
     p{
         
         line-height: 1rem;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         color: #394076;
         transform: translateY(2px);
     }
 
   display: flex;
-  
 }
-
-@mixin bannerIn($delay) {
-    transform: translateY(-100%);
-    animation-name: bannerIn;
-    animation-duration: $banner-duration;
-    animation-delay: $banner-delay + $delay;
-    animation-fill-mode: forwards;
-    animation-iteration-count: initial;
-    animation-direction: initial;
-  }
-  
-  @keyframes bannerIn {
-    from {
-        transform: translateY(-100%);
-      }
-    
-      to {
-        transform: translateY(0);
-      }
-  }
-
- 
- 
-
 
   @media (max-width: 650px) {
     .banner{
@@ -54,20 +23,7 @@
     }
     .burger-check:checked ~ .banner{
       height: 200px;
-     
   }
   
   }
 
-  
-
-  // @media (max-width: 650px) {
-  //   .banner{
-  //       height: 120px;
-  //       width: 140.84px;
-  //       flex-wrap: wrap;
-  //       justify-content: start;
-  //       align-items: flex-end;
-       
-  //   }
-  // }

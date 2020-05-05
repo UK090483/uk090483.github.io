@@ -20,7 +20,7 @@ $text-primary: #394076;
 $footer-background : #f2f2f2;
 
 
-$menu-transition-duration: 0.5s;
+$menu-transition-duration: 0.2s;
 $burger-transition: $menu-transition-duration + 0.1s;
 $burger-rotation-duration: $burger-transition + 0.2s;
 
@@ -49,14 +49,6 @@ $header-height: 100px;
   }
 }
 
-@mixin BodyFadeIn($delay) {
-  opacity: 0;
-  animation-name: BodyIn;
-  animation-duration: 1.5s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  animation-delay: $body-delay + $delay;
-}
 
 
 @mixin sm {

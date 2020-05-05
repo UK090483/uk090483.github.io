@@ -5,9 +5,6 @@ $width: 40px;
    position: absolute;
    top:35px;
    right:20px;
-   transition: left 1s;
-   
-
    
 	display: none;
     border: 0;
@@ -15,14 +12,10 @@ $width: 40px;
 	outline: 0;
 	padding: 0;
 	cursor: pointer;
-	 border-bottom: $burger--thickness solid $text-dark;
+	border-bottom: $burger--thickness solid $text-dark;
     width: $width;
+    transition: border-bottom 0.5s;
     
-    // animation-name: burgerTransitionIn;
-    animation-duration: $burger-transition;
-    animation-fill-mode: forwards;
-
-
 	// Fix for extra space in Firefox
 	&::-moz-focus-inner {
 		border: 0;
@@ -56,17 +49,15 @@ $width: 40px;
 .burger-check:checked ~ .burger {
     
     border-bottom: $burger--thickness solid transparent;
-    // animation-name: burgerTransition;
-     animation-duration: $burger-transition;
-    animation-fill-mode: forwards;
+   
   
     &:before {
-      transform: rotate(-1127deg) translateY(2px) translateX(-3.5px);
+      transform: rotate(-405deg) translateY(2px) translateX(-3.5px);
       transition: transform $burger-rotation-duration ease-out;
     }
   
     &:after {
-      transform: rotate(1127deg) translateY(-2px) translateX(-3.5px); 
+      transform: rotate(405deg) translateY(-2px) translateX(-3.5px); 
       transition: transform $burger-rotation-duration ease-out;
     }
 }
@@ -74,46 +65,5 @@ $width: 40px;
 @media (max-width: 650px) {
     .burger{
         display: inline-block;
-    }
-}
-
-@keyframes burgerTransition{
-    0%{
-      transform: translate3d(0,0,0);
-    }
-    40%{
-        transform: translate3d(0px,-40px,-30px);
-    }
-    70%{
-        transform: translate3d(0px,-40px,-30px);
-    }
-
-    100%{
-        transform: translate3d(4px,-1px,0);
-        right:0;
-    }
-}
-
-
-@keyframes burgerTransitionIn{
-    0%{
-      transform: translate3d(0,0,0);
-
-    }
-    10%{
-        transform: translate3d(0px,-40px,-30px);
-    }
-    70%{
-        transform: translate3d(0px,-40px,-30px);
-       
-    }
-    90%{
-        border-bottom: $burger--thickness solid transparent;
-    }
-
-    100%{
-        top:50;
-        transform: translate3d(0,0,0);
-        border-bottom: $burger--thickness solid  #e7cacc;
     }
 }

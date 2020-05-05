@@ -3,21 +3,16 @@
   z-index: 100;
   padding-top: 260px;
   padding-bottom: 260px;
-
-  
-
   @include BodyFadeIn($text-in-delay);
+  
+p{
+  font-size: 2rem;
+  line-height: 2.7rem;
+}
 
-  p {
-    font-size: 2.25rem;
-    line-height: 2.8rem;
-  }
   p:first-child{
     padding-bottom: 50px;
-  }
-
-
-      
+  }      
 @include md {
   padding-top: 60px;
   padding-bottom: 60px;
