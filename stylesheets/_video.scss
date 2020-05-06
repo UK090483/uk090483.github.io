@@ -8,6 +8,8 @@
     height: calc(100vh - 100px);
     min-height: 30vw;
     @include BodyFadeIn($image-in-delay);
+   
+  
     video{
     position: absolute;
     right: 0;
