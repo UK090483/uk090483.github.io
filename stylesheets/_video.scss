@@ -1,7 +1,7 @@
 .video{
     z-index: -100;
-     overflow: hidden;
-    width: 66.6%;
+    overflow: hidden;
+    width: 66.8%;
     transform: translateX(33.3vw);
     position: relative;
     right: 0;
@@ -10,7 +10,7 @@
     @include BodyFadeIn($image-in-delay);
     video{
     position: absolute;
-    right:0;
+    right: 0;
       height:inherit;
     }
 }
@@ -20,11 +20,10 @@
       transform: translateX(60px);
       width: 100%;
       right: 0;
-      position: relative;
+     
       height: 100vw;
       min-height: 30vw;
     }
- 
   }
   
   
