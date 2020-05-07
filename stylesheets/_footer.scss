@@ -22,17 +22,16 @@ p{
     justify-content: stretch;
 
     p {
-      
       line-height: 2rem;
       width: 50%;
       margin-top: 0;
       padding-top: 0;  
       padding-right: 20px;
+       flex-shrink: 0;
     }
 
     p:nth-child(2){
       width: 41.67%;
-      
     }
 
     p:last-child {
@@ -44,7 +43,6 @@ p{
     padding-bottom: 50px;
 
     p {
-     
       width: 50%;
       margin-top: 0;
       padding-top: 0;

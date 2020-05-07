@@ -12,49 +12,37 @@
 
 <body>
     <div class="main-content">
-        <div class="overlay"><img src="images/logo.svg" alt="logo" style="opacity: 0;"></div>
+        <!-- <div class="overlay"><img src="images/logo.svg" alt="logo" style="opacity: 0;"></div>
         <!-- <div class="container">
         <div class="logo"><img src="images/logo.svg" alt="logo"></div>
-    </div> -->
+        </div> -->
         <div class="head">
-
             <div class="logo"><img src="images/logo.svg" alt="logo"></div>
-            <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check"
-                class="burger"></label>
+            <input class="burger-check" id="burger-check" type="checkbox">
+            <label for="burger-check" class="burger"></label>
             <div class="banner">
-
-
-
                 <a class="login-banner" href="https://ketchup-music.com/#/shop/login?loginTo=boxplayer" target="_blank"
                     rel="noopener noreferrer">
-
                     <div class="login-banner-inner">
                         <p>Log in</p>
                     </div>
-
                 </a>
                 <a class="contact-banner" href="mailto:contact@tonique.com" target="_blank" rel="noopener noreferrer">
-
-                    <div class="contact-banner-inner"><img src="images/mic.svg" alt="mikrofon icon">
+                    <div class="contact-banner-inner">
+                        <img src="images/mic.svg" alt="mikrofon icon">
                         <p>Kontakt</p>
                     </div>
-
                 </a>
-
             </div>
-
         </div>
+
         <div class="body">
 
-            <!-- <div class="images">
-                <div class="img img1"></div>
-                <div class="img img2"></div>
-            </div> -->
-
             <div class="video">
-
-                <video src="video/AdobeStock_193342442.mov" autoplay muted loop
-                    poster="images/Plattenspieler.jpg"></video>
+                <video autoplay muted loop poster="images/plattenspieler_klein.jpg">
+                    <source src="/video/plattenspieler.mov" type="video/mp4" media="all and (min-width:680px)">
+                    <source src="/video/plattenspieler_mobile.mp4" type="video/mp4" media="all and (min-width:320px)">
+                </video>
             </div>
 
 
@@ -85,6 +73,7 @@
                 </div>
             </div>
         </div>
+
         <div class="footer">
             <div class="container-wide">
                 <div class="footer-content">
@@ -111,12 +100,11 @@
                                 Datenschutz</a>
                         </p>
                         <p>© toníque 2020</p>
-
-
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 </body>
 

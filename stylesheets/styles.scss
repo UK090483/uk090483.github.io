@@ -7,7 +7,7 @@
 @import "./banner/contact_banner";
 @import './banner/login_banner';
 
-@import "./images";
+// @import "./images";
 @import "./overlay";
 @import "./logo";
 @import "./text";
@@ -23,11 +23,16 @@
 }
 body{
   color: $text-dark;
+  scrollbar-width: none;
 }
+
 
 .main-content{
   max-width: 1920px;
+  width: 100% ;
   margin: 0 auto;
+  position: relative;
+  scrollbar-width: none;
   
 }
 
