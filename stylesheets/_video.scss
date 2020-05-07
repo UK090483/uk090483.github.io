@@ -13,9 +13,13 @@
   
     video{
     position: absolute;
+   
     right: 0;
       height:inherit;
     }
+    video::-webkit-media-controls-start-playback-button {
+      display: none;
+  }
 }
 
 
@@ -29,5 +33,4 @@
       min-height: 30vw;
     }
   }
-  
   
