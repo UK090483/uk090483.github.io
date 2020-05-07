@@ -1,6 +1,7 @@
 $burger--thickness : 5px;
 $width: 40px;
 .burger{
+	@include BodyFadeIn($text-in-delay);
     -webkit-tap-highlight-color: transparent;
    position: absolute;
    top:42px;
