@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div id='login-overlay' class="loginForm-overlay">
+    <div id='login-overlay' class="loginForm-overlay login-overlay-active">
         <div class="loginForm">
             <div id='login-close-button' class="login_closing_cross">
                 <img src="images/cross.svg" alt="logo">
@@ -19,6 +19,12 @@
             <div class="login_imgcontainer">
                 <img src="images/logo.svg" alt="logo">
             </div>
+
+            <!-- show on login error -->
+
+            <div class='loginForm-error'>Authentication Failed</div>
+
+            <!-- show on login error -->
 
             <div class="session">
 
@@ -82,9 +88,12 @@
 
 
     <div class="main-content">
+
+        <!--  hide this on error to avoid logo overlay !!!-->
+
         <div class="overlay"><img src="images/logo.svg" alt="logo" style="opacity: 0;">
 
-
+            <!--  hide this on error to avoid logo overlay !!!-->
 
         </div>
         <div class="head">

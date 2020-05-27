@@ -16,6 +16,7 @@
 
 
 .loginForm{
+   
     transform: translateY(-100vh);
     background-color: white;
     width: 500px;
@@ -56,6 +57,18 @@
         transform: translateY(0);
     } 
 }
+.loginForm-error{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:$light-red;
+    color:  $text-primary; 
+    text-align: center;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
 
 
 
