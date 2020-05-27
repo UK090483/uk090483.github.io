@@ -12,7 +12,6 @@
    
   }
   
-  @include BodyFadeIn($logo-in-delay);
 }
 
 
@@ -22,3 +21,11 @@
     width: 200px;
   }
 }
+
+
+.with-entrance-animation{
+  .logo{
+    @include BodyFadeIn($logo-in-delay);
+  }
+}
+  

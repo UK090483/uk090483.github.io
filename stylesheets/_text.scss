@@ -3,7 +3,7 @@
   z-index: 100;
   padding-top: 260px;
   padding-bottom: 260px;
-  @include BodyFadeIn($text-in-delay);
+  
   
 p{
   font-size: 2rem;
@@ -20,3 +20,8 @@ p{
 }
 }
 
+.with-entrance-animation{
+  .text{
+    @include BodyFadeIn($text-in-delay);
+  }
+}

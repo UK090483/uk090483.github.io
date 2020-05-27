@@ -8,9 +8,6 @@
   height: calc(100vh - 100px);
   min-height: 30vw;
   
-
-  @include BodyFadeIn($image-in-delay);
-
   .img {
     width: 100%;
     height: 100%;

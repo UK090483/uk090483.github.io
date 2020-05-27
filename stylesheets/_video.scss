@@ -8,7 +8,7 @@
     height: calc(100vh - 100px);
     min-height: 30vw;
   
-    @include BodyFadeIn($image-in-delay);
+    
    
   
     video{
@@ -34,3 +34,8 @@
     }
   }
   
+  .with-entrance-animation{
+    .video{
+      @include BodyFadeIn($text-in-delay);
+    }
+  }

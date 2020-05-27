@@ -4,7 +4,6 @@
 .footer-content {
 width: 100%;
   
-  @include BodyFadeIn(0s);
   
 p{
  
@@ -92,3 +91,8 @@ p{
 }
 }
 
+.with-entrance-animation{
+  .footer-content{
+    @include BodyFadeIn(0s);
+  }
+  }
