@@ -1,0 +1,61 @@
+.cookie-consent{
+    
+    position: fixed;
+    bottom:0;
+    width:100%;
+    min-height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: white;
+    transform: translateY(100%);
+    animation: slideUp;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-direction: initial;
+    animation-delay: 3s;
+    
+   span{
+       padding: 20px;
+       text-align: center;
+   }
+
+     button {
+         -webkit-appearance:  none; 
+         width:  auto;
+        min-width:  100px;
+         border-radius:  2px; 
+         text-align:  center; 
+         padding:  10px 25px;
+        background-color: $light-red;
+         color:  $text-primary; 
+         font-size:  18px;
+      
+      
+        font-weight:  500; 
+        box-shadow:  0px 2px 6px -1px rgba(0,0,0,.13); 
+         border:  none;
+        transition:  all .3s ease; 
+        outline: 0; 
+
+     
+        &:hover {
+            transform:  translateY(-3px);
+            box-shadow:  0 2px 6px -1px rgba($light-red, .65);
+            &:active {
+            transform:  scale(.99);
+            }
+        }
+    }      
+}
+
+@keyframes slideUp{
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
