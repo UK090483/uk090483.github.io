@@ -17,6 +17,7 @@
 @import './video';
 @import './login';
 @import './cookie_consent';
+@import './langshifter';
 
 
 * {
@@ -88,3 +89,15 @@ a{
   text-decoration: none;
   color:$text-primary;
 }
+
+
+.lang_de{
+ .en{
+   display: none;
+ }  
+}
+.lang_en{
+  .de{
+    display: none;
+  }  
+ }
