@@ -32,6 +32,12 @@ position: relative;
 
 }
 
+.with-entrance-animation{
+    .lang_shifter{
+      @include BodyFadeIn($text-in-delay);
+    }
+  }
+
 @include md  {
     .lang_shifter_wrap{
         height: 35px;
