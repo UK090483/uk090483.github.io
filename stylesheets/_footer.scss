@@ -1,14 +1,12 @@
-.footer{
-  background-color:$footer-background;
+.footer {
+  background-color: $footer-background;
 }
 .footer-content {
-width: 100%;
-  
-  
-p{
- 
-  color: #696969;;
-}
+  width: 100%;
+
+  p {
+    color: #696969;
+  }
 
   h3 {
     padding: 100px 0;
@@ -24,20 +22,20 @@ p{
       line-height: 2rem;
       width: 50%;
       margin-top: 0;
-      padding-top: 0;  
+      padding-top: 0;
       padding-right: 20px;
-       flex-shrink: 0;
+      flex-shrink: 0;
     }
 
-    p:nth-child(2){
+    p:nth-child(2) {
       width: 41.67%;
     }
 
     p:last-child {
-     width: fit-content;
+      width: fit-content;
     }
   }
-  .impressum{
+  .impressum {
     display: flex;
     padding-bottom: 50px;
 
@@ -47,52 +45,49 @@ p{
       padding-top: 0;
     }
 
-    p:nth-child(2){ 
+    p:nth-child(2) {
       width: 41.67%;
     }
-  
   }
 }
 
-@include md  {
+@include md {
+  .footer-content {
+    .infos {
+      padding-bottom: 0px;
 
-  .footer-content{
-  .infos {
-    padding-bottom: 0px;
-   
-    flex-wrap: wrap;
+      flex-wrap: wrap;
 
-    p {
-      padding-bottom: 20px;
-      width: 100%;
+      p {
+        padding-bottom: 20px;
+        width: 100%;
+      }
+      p:nth-child(2) {
+        width: 100%;
+      }
+
+      p:last-child {
+        width: 30%;
+        padding-right: 0;
+        text-align: start;
+      }
     }
-    p:nth-child(2){
-      width: 100%;
+    .impressum {
+      flex-wrap: wrap;
 
-    }
-
-    p:last-child {
-      width: 30%;
-      padding-right: 0;
-     text-align: start;
-    }
-  }
-  .impressum {
-    flex-wrap: wrap;
-
-    p {
-      width: 100%;
-    }
-    p:nth-child(2){
-      padding-top: 50px;
-      width: 100%;
+      p {
+        width: 100%;
+      }
+      p:nth-child(2) {
+        padding-top: 50px;
+        width: 100%;
+      }
     }
   }
 }
-}
 
-.with-entrance-animation{
-  .footer-content{
+.with-entrance-animation {
+  .footer-content {
     @include BodyFadeIn(0s);
   }
-  }
+}
